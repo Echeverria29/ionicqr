@@ -1,0 +1,8 @@
+npm install -g @ionic/cli
+npm install -g @angular/cli 
+npm install firebase
+npm install angularfire2 
+npm install firebase@7.24.0 angularfire2 --s (intentarsinesteprimero)
+npm install --save @ionic/storage
+-ng add @angular/material
+npm install ngx-qrcode2  --save

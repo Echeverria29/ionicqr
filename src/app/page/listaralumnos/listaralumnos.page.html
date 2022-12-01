@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <div class="logoduoc">
+      <img src="../../../assets/img/duoclogo.png" alt="">
+    </div>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <mat-progress-bar mode="buffer"></mat-progress-bar>
+  <ion-list>
+
+    <ion-item *ngFor="let profesor of profesores" color="medium">
+      <ion-label>
+        <h2>{{alumno.nombres}}</h2>
+        <h4>{{alumno.apellidos}}</h4>
+      </ion-label>
+      <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+  <ion-item>
+    <ion-button [routerLink]="['/administrador']">Volver</ion-button>
+  </ion-item>
+</ion-content>

@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="logoduoc">
+      <img src="../../../assets/img/Logoduo.png" alt="">
+    </div>
+    <div class="center">
+      <ion-title>Registro</ion-title>
+
+    </div>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registro</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formularioRegistro" (keyup.enter)="guardar()">
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input formControlName="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Confirmar contraseña</ion-label>
+          <ion-input formControlName="confirmacionPassword" type="password"></ion-input>
+        </ion-item>
+        <br>
+        <div class="center">
+          <ion-button color="warning" (click)="guardar()">Registrarse</ion-button>
+
+        </div>
+
+      </form>
+      <div class="logoduoc">
+        <img src="../../assets/img/contrase.png" alt="">
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="warning">
+    <div class="center">
+      <ion-button color="warning" [routerLink]="['/login']">Login</ion-button>
+
+    </div>
+
+
+
+  </ion-toolbar>
+</ion-footer>

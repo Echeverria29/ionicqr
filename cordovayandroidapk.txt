@@ -1,0 +1,10 @@
+generar apk
+ionic integrations enable cordova --add
+ionic cordova platform add android
+ionic build
+npx cap add android
+npx cap open android
+
+
+npm i -g cordova-res (NOT FOUND ON YOUT PATH ERROR)
+

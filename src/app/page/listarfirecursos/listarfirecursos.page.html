@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="">
+    <div class="logoduoc">
+      <img src="../../../assets/img/duoclogo.png" alt="">
+    </div>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background">  
+  <mat-progress-bar mode="buffer"></mat-progress-bar>
+  <ion-list>
+
+    <ion-item *ngFor="let cursoprofe of cursosProfesor">
+      <ion-label>
+        <h2>{{cursoprofe.nombre}}</h2>
+        <h3> {{cursoprofe.idprofe}}</h3>
+      </ion-label>
+      
+      <button [routerLink]="['/qrprofesor']" mat-fab color="accent" >
+        <ion-icon name="qr-code-outline"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+  <ion-item>
+    <button mat-raised-button color="warn" [routerLink]="['/paginaprofe']">Volver</button>
+  </ion-item>
+</ion-content>
+

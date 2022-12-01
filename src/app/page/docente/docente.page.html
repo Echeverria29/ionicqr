@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title color="warning" class="titulo">
+      Perfil de Docente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background">  
+  <div class="ion-margin-top" id="change1">
+    <ion-card>
+      <ion-card-header *ngFor="let profesor of nombreProfesor">
+        <ion-card-subtitle>Nombre: {{profesor.nombres}}</ion-card-subtitle>
+      </ion-card-header>
+      <img src="../../../assets/img/docente.png" class="imagen">
+
+      <ion-card-content *ngFor="let profesor of nombreProfesor">
+        5 años de experiencia en DUOC UC.
+        Correo Docente: {{profesor.correo}}
+      </ion-card-content>
+    </ion-card>
+    <button mat-raised-button color="warn" class="boton1" [routerLink]="['/paginaprofe']" >
+      <ion-icon name="return-up-back-outline"></ion-icon> Volver
+    </button>
+  </div>
+</ion-content>

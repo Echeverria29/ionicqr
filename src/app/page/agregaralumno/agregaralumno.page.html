@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <div class="logoduoc">
+      <img src="../../../assets/img/duoclogo.png" alt="">
+    </div>
+
+    <ion-title class="titulo" color="warning"></ion-title>
+  </ion-toolbar>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background" color="medium">
+  <div class="ion-margin-top" id="change1">
+
+
+    <ion-item>
+      <ion-label position="floating">Nombres:</ion-label>
+
+      <ion-input [(ngModel)]="alumno.nombres"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Apellidos:</ion-label>
+      <ion-input [(ngModel)]="alumno.apellidos"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Correo:</ion-label>
+      <ion-input [(ngModel)]="alumno.correo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Rut:</ion-label>
+      <ion-input [(ngModel)]="alumno.rut"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Carrera:</ion-label>
+      <ion-input [(ngModel)]="alumno.carrera"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Sede:</ion-label>
+      <ion-input [(ngModel)]="alumno.sede"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="grabar()">grabar </ion-button>
+    </ion-item>
+
+  </div>
+  <div class="boton2">
+    <ion-button [routerLink]="['/administrador']">Volver</ion-button>
+
+  </div>
+
+
+</ion-content>
